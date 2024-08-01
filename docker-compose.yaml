@@ -1,0 +1,13 @@
+version: "3.5"
+
+services:
+
+  my_server:
+    build: ./part_5
+  
+  nginx:
+    build: ./part_6
+    ports: 
+      - "80:8080"
+
+

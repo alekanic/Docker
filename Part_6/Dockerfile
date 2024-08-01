@@ -48,6 +48,6 @@ rm -rf /var/lib/apt/lists
 USER nginx
 
 # Указывает, что при зазпуске контейнера должен выполняться скрипт run.sh
-ENTRYPOINT ["sh", "./run.sh"]
+ENTRYPOINT ["sh", "./nginx_start.sh"]
 
 HEALTHCHECK NONE
